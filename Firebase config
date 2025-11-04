@@ -1,0 +1,17 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBku2qgN1ftioVdfNcvnDgCWSkN9mwx0iA",
+  authDomain: "pulse-f5547.firebaseapp.com",
+  projectId: "pulse-f5547",
+  storageBucket: "pulse-f5547.firebasestorage.app",
+  messagingSenderId: "748217789233",
+  appId: "1:748217789233:android:245256b646a47bcb129e10"
+};
+
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
+export const auth = getAuth(app);
+export default app;
